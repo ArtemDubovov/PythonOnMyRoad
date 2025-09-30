@@ -1,0 +1,47 @@
+
+body {
+    font-family: "Jost", sans-serif;
+    min-height: 100vh;
+    background-color: rgb(255, 248, 238);
+    font-weight: 400;
+    font-style: normal;
+    color: #003;
+}
+
+.section {
+    border-top: 1px solid black;
+}
+
+.content {
+    background-color: rgba(126, 218, 255, 0.514);
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.wrapper_header {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wrapper {
+    padding: 20px 60px;
+}
+
+.title {
+    text-align: center;
+}
+
+.menu_link > a{
+    color: black
+}
+
+.code {
+    border-radius: 12px;
+    background-color: rgba(253, 255, 157, 0.884);
+    display: block;
+    padding: 12px;
+    font-weight: 400;
+    border: 1px solid black;
+}

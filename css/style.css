@@ -38,6 +38,7 @@ body {
 }
 
 .code {
+    font-size: 14px;
     border-radius: 12px;
     background-color: rgba(253, 255, 157, 0.884);
     display: block;

@@ -64,6 +64,14 @@ body {
 
 .title {
     text-align: center;
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.title_small {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 0.67em 0;
 }
 
 .menu_link {
@@ -76,7 +84,7 @@ body {
     text-decoration: none;
 }
 code {
-    font-size: 16px;
+    font-size: 12px;
 }
 .code {
     border-radius: 12px;
@@ -85,4 +93,19 @@ code {
     padding: 12px;
     font-weight: 400;
     border: 1px solid black;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90px;
+    background-color: #003;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    margin-top: 24px;
+}
+
+.link_profile {
+    color: white;
 }

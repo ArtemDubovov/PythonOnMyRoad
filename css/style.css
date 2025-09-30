@@ -10,7 +10,7 @@ body {
 }
 
 .menu_top_button {
-    background-color: rgba(50, 42, 165, 0.342);
+    background-color: rgba(0, 255, 13, 0.842);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,9 +26,11 @@ body {
 }
 
 .menu_top_button > a {
-    display: block;
-    width: 24px;
-    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
 }
 
 

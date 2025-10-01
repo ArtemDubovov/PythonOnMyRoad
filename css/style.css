@@ -12,7 +12,7 @@ body {
 }
 
 .menu_top_button {
-    background-color: rgba(0, 255, 13, 0.842);
+    background-color: rgba(0, 255, 13, 0.384);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     position: fixed;
     width: 36px;
     height: 36px;
-    bottom: 30px;
+    bottom: 90px;
     right: 30px;
 }
 
@@ -31,13 +31,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
 }
 
 .menu_top_button > img {
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 32px;
+    max-height: 32px;
 }
 
 .section {

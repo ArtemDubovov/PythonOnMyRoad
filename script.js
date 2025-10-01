@@ -8,7 +8,7 @@ let objMoveToMenu = {
 for (let i  = 1; i <= 7; i++) {
     const btn = document.getElementById(`menuButton-${i}`);
     section = document.getElementById(`section-${i}`);
-    let top = section.offsetTop + 100;
+    let top = section.offsetTop - 100;
     btn.onclick = function () {
         console.log("Click")
         window.scrollTo({

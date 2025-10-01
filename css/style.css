@@ -1,5 +1,6 @@
 
 body {
+    padding: 12px;
     position: relative;
     font-family: "Jost", sans-serif;
     min-height: 100vh;
@@ -8,6 +9,8 @@ body {
     font-style: normal;
     color: #003;
 }
+
+
 
 .menu_top_button {
     background-color: rgba(0, 255, 13, 0.842);
@@ -33,25 +36,38 @@ body {
     height: 36px;
 }
 
-
 .menu_top_button > a > img {
     max-width: 24px;
     max-height: 24px;
 }
 
 .section {
-    margin: 10px;
+    max-width: 1620px;
+    margin: 10px auto;
     background-color: cadetblue;
     border-radius: 32px;
 }
 
 .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: rgba(126, 218, 255, 0.514);
     padding: 12px;
     border-radius: 12px;
 }
 
+.header {
+    max-width: 1620px;
+    margin: 0px auto;
+}
+
+.menu {
+    max-width: 1620px;
+    margin: 0px auto;
+}
+
 .wrapper_header {
+
     padding: 20px 60px;
     display: flex;
     justify-content: flex-start;
@@ -59,6 +75,7 @@ body {
 }
 
 .wrapper {
+    margin: 0px auto;
     padding: 20px 60px;
 }
 
@@ -87,6 +104,8 @@ code {
     font-size: 12px;
 }
 .code {
+    margin-top: 12px;
+    margin-bottom: 12px;
     border-radius: 12px;
     background-color: rgba(253, 255, 157, 0.884);
     display: block;
@@ -108,4 +127,18 @@ code {
 
 .link_profile {
     color: white;
+}
+
+ol > li {
+    margin-left: 25px;
+    list-style: decimal;
+}
+
+i {
+    font-style: italic;
+}
+
+.list_img {
+    max-width: 120px;
+    margin: 0 auto;
 }

@@ -20,7 +20,7 @@
             <img src="./img/—Pngtree—vector up arrow icon_4231914.png"/>
         </a>
     </div>
-    <header>
+    <header class="header">
         <div class="wrapper_header">
             <img src="./img/favicon-32x32.png"/>
             <h2>thon on my <i>road</i></h2>
@@ -31,7 +31,10 @@
             <ul>
                 <li class="menu_link"><a href="#section-1">#База</a></li>
                 <li class="menu_link"><a href="#section-2">#Списки</a></li>
-                <li class="menu_link"><a href="#section-3">#Контакты</a></li>
+                <li class="menu_link"><a href="#section-3">#Функции</a></li>
+                <li class="menu_link"><a href="#section-4">#Модуль random</a></li>
+                <li class="menu_link"><a href="#section-5">#Кортежи</a></li>
+                <li class="menu_link"><a href="#section-6">#Множества</a></li>
             </ul>
         </div>
     </nav>
@@ -109,12 +112,43 @@
                     <ol>Строковый метод split()</ol>                                                              
                 </ul>
             </div>
+            <h2 class="title_small">Тип данных bool</h2>
+            <div class="content">
+                <ul>
+                    <ol>Функции bool()</ol>
+                    <ol>Функции type()</ol>
+                    <ol>Функции isinstance()</ol>
+                    <ol>Метод lower()</ol>
+                    <ol>Метод upper()</ol>   
+                    <ol>Метод count()</ol> 
+                    <ol>Метод startswith()</ol> 
+                    <ol>Метод endswith()</ol>
+                    <ol>Метод find()</ol>
+                    <ol>Метод rfind()</ol>
+                    <ol>Метод index()</ol>
+                    <ol>Метод rindex()</ol>
+                    <ol>Метод strip()</ol>
+                    <ol>Метод lstrip()</ol>
+                    <ol>Метод rstrip()</ol>
+                    <ol>Метод replace()</ol>
+                    <ol>Метод isalnum()</ol> 
+                    <ol>Метод isalpha()</ol> 
+                    <ol>Метод isdigit()</ol> 
+                    <ol>Метод islower()</ol> 
+                    <ol>Метод isupper()</ol> 
+                    <ol>Метод isspace()</ol> 
+                    <ol>Функция ord()</ol>
+                    <ol>Функция chr()</ol>
+                    <ol>Строковый метод join()</ol>
+                    <ol>Строковый метод split()</ol>                                                              
+                </ul>
+            </div>
         </div>
         
     </section>
-    <section class="section" id="section-2">
+    <section id="section-2" class="section">
         <div class="wrapper">
-            <h2 class="title">Списки</h2>
+            <h2 class="title">Списки (тип данных list)</h2>
             <div class="content">
                 <ul>
                     <li>Встроенная функция list()</li>
@@ -159,22 +193,164 @@
                 <h2 class="title_small">Основные алгоритмы сортировки</h2>
             <div class="content">
                 <h3 class="title_small">Медленные:</h3>
-                <ul>
+                <ol>
                     <li>Пузырьковая сортировка (Bubble sort)</li>
                     <li>Сортировка выбором (Selection sort)</li>
                     <li>Сортировка простыми вставками (Insertion sort)</li>
-                </ul>
+                </ol>
                 <h3 class="title_small">Быстрые:</h3>
-                <ul>
+                <ol>
                     <li>Сортировка Шелла (Shell sort);</li>
                     <li>Быстрая сортировка (Quick sort);</li>
                     <li>Сортировка слиянием (Merge sort);</li>
                     <li>Пирамидальная сортировка (Heap sort);</li>
                     <li>Сортировка TimSort (используется в Java и Python)</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="section-3" class="section">
+        <div class="wrapper">
+            <h2 class="title">Функции</h2>
+            <div class="content">
+                <p>Функции объявляются с помощью ключевого слова def (от англ. define – определять). За ключевым словом def следуют название функции, круглые скобки () и двоеточие :. Со следующей строки идет блок кода – тело функции.</p>
+                <code class="code">
+                    def название_функции():
+                    <br>
+                    ⠀⠀⠀⠀блок кода
+                </code>
+                <ol>
+                    <li>Ключевое слово pass</li>
+                    <li>Функция с возвратом значения</li>
+                    <li>Ключевое слово return</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="section-4" class="section">
+        <div class="wrapper">
+            <h2 class="title">Модуль random</h2>
+            <code class="code">
+                import random
+            </code>
+            <div class="content">
+                <ul>
+                    <li>Функция randint()</li>
+                    <li>Функция randrange()</li>
+                    <li>Функция random()</li>
+                    <li>Функция uniform()</li>
                 </ul>
             </div>
         </div>
     </section>
+    <section id="section-5" class="section">
+        <div class="wrapper">
+            <h2 class="title">Кортежи (тип данных tuple)</h2>
+            <div class="content">
+                Кортеж (tuple) – ещё один вид коллекций в Python. Они похожи на списки, но являются неизменяемыми.
+            </div>
+            <div class="content">
+                Списки могут делать то же, что кортежи, и даже больше. Но неизменяемость кортежей обеспечивает им особые свойства:
+
+                скорость – кортежи быстрее работают, так как из-за неизменяемости хранятся в памяти иначе, и операции с их элементами выполняются заведомо быстрее, чем с компонентами списка. Одна из причин существования кортежей – производительность. Обработка кортежа выполняется быстрее, чем обработка списка, поэтому кортежи удобны для обработки большого объема неизменяемых данных.
+                безопасность – неизменяемость превращает их в идеальные константы. Заданные кортежами константы делают код более читаемым и безопасным. Кроме того, в кортеже можно безопасно хранить данные, не опасаясь, что они будут случайно или преднамеренно изменены в программе.
+            </div>
+            <h2 class="title_small">Примеры кортежей</h2>
+            <code class="code">
+                empty_tuple = ()
+                my_tuple = tuple() <i>// Принимает итерируюмуя коллекцию </i>
+                <br>
+                point = (1.5, 6.0)
+                <br>
+                names = ('Timur', 'Ruslan', 'Roman')
+                <br> 
+                info = ('Timur', 'Guev', 28, 170, 60, False)
+                <br>
+                nested_tuple = (('one', 'two'), ['three', 'four'])
+                <br> 
+            </code>
+            <h2 class="title_small">Кортеж с одним элементом</h2>
+            <code class="code">
+                my_tuple = (1,)
+                <br>
+                print(type(my_tuple))
+            </code>
+            <h2 class="title_small">Особенности кортежей</h2>
+            <div class="content">
+                <ol>
+                    <li>Доступ к элементу по индексу (только для получения значений элементов);</li>
+                    <li>Методы, в частности index(), count();</li>
+                    <li>Встроенные функции, в частности len(), sum(), min() и max();</li>
+                    <li>Срезы;</li>
+                    <li>Оператор принадлежности in;</li>
+                    <li>Операторы конкатенации (+) и повторения (*).</li>
+                </ol>
+            </div>
+            <h2 class="title_small">Сравнение кортежей</h2>
+            <code class="code">
+                print((1, 8) == (1, 8)) <i>// True</i> <br> 
+                print((1, 8) != (1, 10)) <i>// True</i> <br>
+                print((1, 9) < (1, 2)) <i>// False</i> <br>
+                print((2, 5) < (6,))  <i>// True</i> <br>
+                print(('a', 'bc') > ('a', 'de'))  <i>// False</i> <br>
+            </code>
+            <code class="code">
+
+            </code>
+        </div>
+    </section>
+    <section class="section">
+        <div class="wrapper">
+            <h2 class="title">Множества (тип данных set)</h2>
+            <div class="content">
+                Множество – структура данных, организованная так же, как математические множества.
+                <br>
+                Важно знать:
+                <br>
+                Все элементы множества различны (уникальны), два элемента не могут иметь одинаковое значение;
+                множества неупорядочены, то есть элементы не хранятся в каком-то определенном порядке;
+                элементы множества должны относиться к неизменяемым типам данных;
+                хранящиеся в множестве элементы могут иметь разные типы данных.
+            </div>
+            <h2 class="title_small">Создание множества</h2>
+            <code class="code">
+                numbers = {2, 4, 6, 8, 10}
+                <br>
+                languages = {'Python', 'C#', 'C++', 'Java'}
+            </code>
+            <h2 class="title_small">Пустое множество</h2>
+            <code class="code">
+                myset = set()    # пустое множество
+            </code>
+            <h2 class="title_small">Примечание</h2>
+            <div class="content">
+                Индексация и срезы недоступны для множеств.
+            </div>
+            <h2 class="title_small">Методы</h2>
+            <div class="content">
+                <ul>
+                    <li>Метод add()</li>
+                    <li>Метод remove()</li>
+                    <li>Метод discard()</li>
+                    <li>Метод pop()</li>
+                    <li>Метод clear()</li>
+                    <li>Метод update()</li>
+                    <li>Метод issubset()</li>
+                    <li>Метод issuperset()</li>
+                    <li>Метод isdisjoint()</li>
+                    <li>Объединение множеств: метод union()</li>
+                    <img class="list_img" src="./img/union.png" alt="">
+                    <li>Пересечение множеств: метод intersection()</li>
+                    <img class="list_img" src="./img/intersection.png" alt="">
+                    <li>Разность множеств: метод difference()</li>
+                    <img class="list_img" src="./img/difference.png" alt="">
+                    <li>Симметрическая разность: метод symmetric_difference()</li>
+                    <img class="list_img" src="./img/symmetric_difference.png" alt="">
+                </ul>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -185,12 +361,12 @@
 
     <div class="content">
         <ul>
-
+            
         </ul>
     </div>
 
 
-
+    ⠀⠀⠀⠀
     <footer class="footer">
         <a class="link_profile" href="https://github.com/ArtemDubovov">https://github.com/ArtemDubovov</a>
     </footer>

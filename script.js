@@ -11,7 +11,7 @@ for (let i  = 1; i <= 7; i++) {
     btn.onclick = function () {
         section = document.getElementById(`section-${i}`);
         window.scrollTo({
-        top: section.offsetTop - 120,
+        top: section.offsetTop - 20,
         left: 0,
         behavior: "smooth"
         });

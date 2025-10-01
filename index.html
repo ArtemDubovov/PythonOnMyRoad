@@ -14,11 +14,9 @@
     <script src="./script.js" defer></script>
     <title>Python on my road</title>
 </head>
-<body>
-    <div class="menu_top_button">
-        <a href="#menu">
-            <img src="./img/—Pngtree—vector up arrow icon_4231914.png"/>
-        </a>
+<body id="body">
+    <div id="menuTopButton" class="menu_top_button">
+        <img src="./img/—Pngtree—vector up arrow icon_4231914.png"/>
     </div>
     <header class="header">
         <div class="wrapper_header">
@@ -29,12 +27,13 @@
     <nav class="menu" id="menu">
         <div class="wrapper">
             <ul>
-                <li class="menu_link"><a href="#section-1">#База</a></li>
-                <li class="menu_link"><a href="#section-2">#Списки</a></li>
-                <li class="menu_link"><a href="#section-3">#Функции</a></li>
-                <li class="menu_link"><a href="#section-4">#Модуль random</a></li>
-                <li class="menu_link"><a href="#section-5">#Кортежи</a></li>
-                <li class="menu_link"><a href="#section-6">#Множества</a></li>
+                <li class="menu_link"><a href="#section-1">#Базовые знания</a></li>
+                <li class="menu_link"><a href="#section-2">#Функции</a></li>
+                <li class="menu_link"><a href="#section-3">#Списки</a></li>
+                <li class="menu_link"><a href="#section-4">#Кортежи</a></li>
+                <li class="menu_link"><a href="#section-5">#Множества</a></li>
+                <li class="menu_link"><a href="#section-6">#Cловари</a></li>
+                <li class="menu_link"><a href="#section-7">#Модуль random</a></li>
             </ul>
         </div>
     </nav>
@@ -148,6 +147,24 @@
     </section>
     <section id="section-2" class="section">
         <div class="wrapper">
+            <h2 class="title">Функции</h2>
+            <div class="content">
+                <p>Функции объявляются с помощью ключевого слова def (от англ. define – определять). За ключевым словом def следуют название функции, круглые скобки () и двоеточие :. Со следующей строки идет блок кода – тело функции.</p>
+                <code class="code">
+                    def название_функции():
+                    <br>
+                    ⠀⠀⠀⠀блок кода
+                </code>
+                <ol>
+                    <li>Ключевое слово pass</li>
+                    <li>Функция с возвратом значения</li>
+                    <li>Ключевое слово return</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <section id="section-3" class="section">
+        <div class="wrapper">
             <h2 class="title">Списки (тип данных list)</h2>
             <div class="content">
                 <ul>
@@ -209,41 +226,7 @@
             </div>
         </div>
     </section>
-    <section id="section-3" class="section">
-        <div class="wrapper">
-            <h2 class="title">Функции</h2>
-            <div class="content">
-                <p>Функции объявляются с помощью ключевого слова def (от англ. define – определять). За ключевым словом def следуют название функции, круглые скобки () и двоеточие :. Со следующей строки идет блок кода – тело функции.</p>
-                <code class="code">
-                    def название_функции():
-                    <br>
-                    ⠀⠀⠀⠀блок кода
-                </code>
-                <ol>
-                    <li>Ключевое слово pass</li>
-                    <li>Функция с возвратом значения</li>
-                    <li>Ключевое слово return</li>
-                </ol>
-            </div>
-        </div>
-    </section>
     <section id="section-4" class="section">
-        <div class="wrapper">
-            <h2 class="title">Модуль random</h2>
-            <code class="code">
-                import random
-            </code>
-            <div class="content">
-                <ul>
-                    <li>Функция randint()</li>
-                    <li>Функция randrange()</li>
-                    <li>Функция random()</li>
-                    <li>Функция uniform()</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="section-5" class="section">
         <div class="wrapper">
             <h2 class="title">Кортежи (тип данных tuple)</h2>
             <div class="content">
@@ -299,7 +282,7 @@
             </code>
         </div>
     </section>
-    <section class="section">
+    <section id="section-5" class="section">
         <div class="wrapper">
             <h2 class="title">Множества (тип данных set)</h2>
             <div class="content">
@@ -350,22 +333,27 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-    <h2 class="title_small"></h2>
-    <code class="code">
-    </code>
-
-    <div class="content">
-        <ul>
-            
-        </ul>
-    </div>
-
-
+    <section id="section-6" class="section">
+        <div class="wrapper">
+            <h2 class="title">Словари (тип данных dict)</h2>
+        </div>
+    </section>
+    <section id="section-7" class="section">
+        <div class="wrapper">
+            <h2 class="title">Модуль random</h2>
+            <code class="code">
+                import random
+            </code>
+            <div class="content">
+                <ul>
+                    <li>Функция randint()</li>
+                    <li>Функция randrange()</li>
+                    <li>Функция random()</li>
+                    <li>Функция uniform()</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     ⠀⠀⠀⠀
     <footer class="footer">
         <a class="link_profile" href="https://github.com/ArtemDubovov">https://github.com/ArtemDubovov</a>

@@ -1,12 +1,22 @@
 const buttonToMenu = document.getElementById("menuTopButton")
-console.log(buttonToMenu)
-
-function smoothToTopWindow() {
-  window.scrollTo({
+let objMoveToMenu = {
   top: 0,
   left: 0,
   behavior: "smooth"
-});
 }
 
-buttonToMenu.onclick = smoothToTopWindow;
+for (let i  = 1; i <= 7; i++) {
+    const btn = document.getElementById(`menuButton-${i}`);
+    section = document.getElementById(`section-${i}`);
+    let top = section.offsetTop;
+    btn.onclick = function () {
+        console.log("Click")
+        window.scrollTo({
+        top: top,
+        left: 0,
+        behavior: "smooth"
+        });
+    }
+}
+
+buttonToMenu.onclick = () => window.scrollTo(objMoveToMenu);

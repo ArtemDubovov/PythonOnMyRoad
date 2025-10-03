@@ -26,7 +26,7 @@
     </header>
     <nav class="menu" id="menu">
         <div class="wrapper">
-            <ul>
+            <ul class="menu_ul">
                 <li id="menuButton-1" class="menu_link">#Базовые знания</li>
                 <li id="menuButton-2" class="menu_link">#Функции</li>
                 <li id="menuButton-3" class="menu_link">#Списки</li>
@@ -336,6 +336,63 @@
     <section id="section-6" class="section">
         <div class="wrapper">
             <h2 class="title">Словари (тип данных dict)</h2>
+            <h2 class="title_small">Создание словаря</h2>
+            <code class="code">
+                dict1 = {}
+                <br>
+                dict2 = dict()
+            </code>
+            <code class="code">
+                languages = {'Python': 'Гвидо ван Россум', <br>
+             ⠀⠀⠀⠀'C#': 'Андерс Хейлсберг', <br>
+             ⠀⠀⠀⠀'Java': 'Джеймс Гослинг', <br>
+             ⠀⠀⠀⠀'C++': 'Бьёрн Страуструп'} <br>
+            </code>
+            <code class="code">
+                info = dict(name='Timur', age=28, job='Teacher')
+            </code>
+            <code class="code">
+                info_list = [('name', 'Timur'), ('age', 28), ('job', 'Teacher')]  # список кортежей
+                <br>
+                info_dict = dict(info_list)
+            </code>
+            <code class="code">
+                info_tuple = (['name', 'Timur'], ['age', 28], ['job', 'Teacher'])  # кортеж списков
+                <br>
+                info_dict = dict(info_tuple)  # создаем словарь на основе кортежа списков
+            </code>
+            <code class="code">
+                dict1 = dict.fromkeys(['name', 'age', 'job'], 'Missed information')
+            </code>
+            <code class="code">
+                dict1 = dict.fromkeys(['name', 'age', 'job'])  <i>// None для каждого ключа</i>
+            </code>
+            <h2 class="title_small">Методы</h2>
+            <div class="content">
+                <ul>
+                    <li>Метод keys()</li>
+                    <li>Метод values()</li>
+                    <li>Метод items()</li>
+                    <li>Оператор принадлежности in</li>
+                    <li>Встроенные функции sum(), min(), max()</li>
+                    <li>Метод get()</li>
+                    <li>Метод update()</li>
+                    <li>Метод pop()</li>
+                    <li>Метод popitem()</li>
+                    <li>Метод clear()</li>
+                    <li>Метод copy()</li>
+                    <li>Метод setdefault()</li>
+                </ul>
+            </div>
+            <h2 class="title_small">
+                Генератор словаря
+            </h2>
+            <code class="code">
+                {ключ: значение for переменная in последовательность}
+            </code>
+            <code class="code">
+                squares = {i: {j: j**2 for j in range(i + 1)} for i in range(5)}
+            </code>
         </div>
     </section>
     <section id="section-7" class="section">

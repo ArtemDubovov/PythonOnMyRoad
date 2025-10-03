@@ -5,7 +5,9 @@ let objMoveToMenu = {
   behavior: "smooth"
 }
 
-for (let i  = 1; i <= 7; i++) {
+const button_list = document.getElementsByClassName('section')
+
+for (let i  = 1; i <= button_list.length; i++) {
     const btn = document.getElementById(`menuButton-${i}`);
 
     btn.onclick = function () {

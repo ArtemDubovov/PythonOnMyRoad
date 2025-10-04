@@ -35,6 +35,7 @@
                 <li id="menuButton-6" class="menu_link">#Cловари</li>
                 <li id="menuButton-7" class="menu_link">#Модуль random</li>
                 <li id="menuButton-8" class="menu_link">#Модуль string</li>
+                <li id="menuButton-9" class="menu_link">#Модуль decimal</li>
             </ul>
         </div>
     </nav>
@@ -427,6 +428,71 @@
                     <li>string.punctuation</li>
                     <li>string.printable</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section-9" class="section">
+        <div class="wrapper">
+            <h2 class="title">Модуль decimal</h2>
+            <div class="content">
+                Decimal – десятичное число, для выполнения точных расчетов
+            </div>
+            <code class="code">
+                from decimal import *
+                <br>
+                d1 = Decimal(1)
+                <br>
+                d2 = Decimal('52.198')
+            </code>
+            <h2 class="title_small">Методы</h2>
+            <div class="content">
+                <ul>
+                    <li>Метод sqrt()</li>
+                    <li>Метод exp()</li>
+                    <li>Метод ln()</li>
+                    <li>Метод ln10()</li>
+                    <li>Метод as_tuple()</li>
+                    <li>Метод quantize()</li>
+                </ul>
+            </div>
+            <h2 class="title_small">Работа с контекстом Decimal чисел</h2>
+            <div class="content">
+                Базовые параметры Decimal можно посмотреть в его контексте, выполнив функцию getcontext().
+                <br>
+                Приведенный ниже код:
+                <code class="code">
+                    from decimal import *
+                    <br>
+                    print(getcontext())
+                </code>
+                Выводит:
+                <code class="code">
+                    Context(prec=28, rounding=ROUND_HALF_EVEN, Emin=-999999, Emax=999999, capitals=1, clamp=0, 
+flags=[], traps=[InvalidOperation, DivisionByZero, Overflow])
+                </code>
+                Эти параметры можно менять:
+                <code class="code">
+                    from decimal import *
+                    <br>
+                    getcontext().prec = 3
+                </code>
+            </div>
+            <h2 class="title_small">Округление чисел</h2>
+            <div class="content">
+                Округляют числа Decimal с помощью метода quantize(). Этот метод в качестве первого аргумента принимает объект Decimal, указывающий на формат округления.
+                <code class="code">
+                    from decimal import *
+                    <br>
+                    getcontext().prec = 4     
+                    <br>
+                    num = Decimal('3.1415926535')
+                    <br>
+                    print(num.quantize(Decimal('1.000'))) <i># округление до 3 цифр в дробной части   </i>
+                    <br>
+                    print(num.quantize(Decimal('1.00'))) <i># округление до 2 цифр в дробной части</i>
+                </code>
+                Если точность округления установлена в 2
+                2, а формат округления Decimal('1.00'), то возникнет ошибка.
             </div>
         </div>
     </section>
